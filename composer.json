@@ -1,0 +1,29 @@
+{
+    "name": "innoweb/silverstripe-folder-page",
+    "type": "silverstripe-vendormodule",
+    "description": "",
+    "license": "BSD-3-Clause",
+    "keywords": ["silverstripe"],
+    "homepage": "https://github.com/innowebau/silverstripe-folder-page",
+    "support": {
+        "issues": "https://github.com/innowebau/silverstripe-folder-page/issues"
+    },
+    "authors": [{
+        "name": "Florian Thoma",
+        "homepage": "https://www.innoweb.com.au"
+    }],
+    "require": {
+        "silverstripe/vendor-plugin": "^1.0",
+        "silverstripe/cms": "^4.1"
+    },
+    "suggest": {
+        "innoweb/silverstripe-page-icons": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Innoweb\\FolderPage\\": "src/"
+        }
+    },
+    "prefer-stable": true,
+    "minimum-stability": "dev"
+}

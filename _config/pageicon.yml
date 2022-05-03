@@ -1,0 +1,9 @@
+---
+Name: folder-page-icon
+Only:
+  moduleexists: 'innoweb/silverstripe-page-icons'
+---
+
+Innoweb\FolderPage\Pages\FolderPage:
+  icon_class: false
+  icon: 'innoweb/silverstripe-page-icons: client/icons/folder.svg'

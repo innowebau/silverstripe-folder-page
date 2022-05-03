@@ -1,0 +1,7 @@
+---
+Name: folder-page
+---
+
+Innoweb\FolderPage\Pages\FolderPage:
+  cms_fields_remove:
+    - Metadata
