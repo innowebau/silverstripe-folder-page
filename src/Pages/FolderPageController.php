@@ -1,6 +1,6 @@
 <?php
 
-namespace Fromholdio\FolderPage\Pages;
+namespace Innoweb\FolderPage\Pages;
 
 use PageController;
 use SilverStripe\Control\HTTPRequest;
