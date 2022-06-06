@@ -4,6 +4,7 @@ namespace Innoweb\FolderPage\Pages;
 
 use Page;
 use SilverStripe\CMS\Model\RedirectorPage;
+use SilverStripe\CMS\Model\SiteTree;
 
 class FolderPage extends Page
 {
@@ -23,7 +24,7 @@ class FolderPage extends Page
         'ShowInSitemap' => true
     ];
 
-    public function getTargetPage(): ?Page
+    public function getTargetPage(): ?SiteTree
     {
         $firstChildPage = null;
         $aChildren = $this->AllChildren();
@@ -42,7 +43,7 @@ class FolderPage extends Page
         return $firstChildPage;
     }
 
-    public function ContentSource(): Page
+    public function ContentSource(): SiteTree
     {
         return $this->getTargetPage() ?? $this;
     }
