@@ -9,7 +9,9 @@ Adds a Folder page type to Silverstripe, linking to first child page.
 
 ## Requirements
 
-* Silverstripe CMS 4.x
+* Silverstripe CMS 5
+
+Note: this version is compatible with Silverstripe 5. For Silverstripe 4, please see the [1 release line](https://github.com/innowebau/silverstripe-folder-page/tree/1).
 
 ## Installation
 
