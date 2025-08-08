@@ -7,7 +7,9 @@ use SilverStripe\Control\HTTPRequest;
 
 class FolderPageController extends PageController
 {
-    private static $allowed_actions = ['index'];
+    private static $allowed_actions = [
+		'index'
+	];
 
     public function index(HTTPRequest $request)
     {
@@ -19,6 +21,7 @@ class FolderPageController extends PageController
                 return $this->redirect($targetPage->Link(), 301);
             }
         }
+
         return parent::handleAction($request, 'handleIndex');
     }
 
@@ -28,8 +31,11 @@ class FolderPageController extends PageController
         if ($targetPage) {
             return $this->redirect($targetPage->Link(), 301);
         }
-        return "<p class=\"message-setupWithoutRedirect\">" .
-            _t(__CLASS__ . '.HASBEENSETUP', 'A redirector page has been set up without anywhere to redirect to.') .
-            "</p>";
+
+        return '<p class="message-setupWithoutRedirect">' .
+            _t(
+				self::class . '.HASBEENSETUP',
+				'A redirector page has been set up without anywhere to redirect to.'
+			) . '</p>';
     }
 }

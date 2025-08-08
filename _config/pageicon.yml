@@ -5,5 +5,5 @@ Only:
 ---
 
 Innoweb\FolderPage\Pages\FolderPage:
-  icon_class: false
-  icon: 'innoweb/silverstripe-page-icons: client/icons/folder.svg'
+  cms_icon_class: false
+  cms_icon: 'innoweb/silverstripe-page-icons: client/icons/folder.svg'
